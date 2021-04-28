@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    [
+      "module-resolver", {
+        "root": ["./"],
+        "alias": {
+          "src": "./src"
+        },
+        "extensions": [".js", ".jsx", ".tsx"]
+      }
+    ],
+    ["styled-jsx/babel", {"optimizeForSpeed": true}]
+  ],
+  "presets": [
+    [
+      "next/babel"
+    ]
+  ]
+}

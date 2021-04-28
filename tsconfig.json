@@ -16,8 +16,12 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+    },
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "next.config.js", "pages/index.js", "src/components/invoices/modals/save-invoice/index.js", "src/components/modals/invoice-checkout.component.js"]
 }
