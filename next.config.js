@@ -15,6 +15,7 @@ module.exports = withVideos(
         env: {
           CLIENT_ID: process.env.CLIENT_ID,
           CLIENT_SECRET: process.env.CLIENT_SECRET,
+          REDIRECT_URI: process.env.REDIRECT_URI,
         },
         webpack(config, options) {
           config.resolve.alias['src'] = path.join(__dirname, 'src');
